@@ -1,0 +1,34 @@
+:root{
+    --clock-height: 20vh;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.number-format{
+    text-align: center;
+    line-height: 130px;
+    font-size: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clock{
+    height: var(--clock-height);
+    width: 50vw;
+    margin-top: calc(calc(100vh - var(--clock-height))/2);
+    margin-left:auto;
+    margin-right:auto;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+}
+
+#hour, #minute, #second {
+    width: calc(100% / 3);
+    display: flex;
+}
